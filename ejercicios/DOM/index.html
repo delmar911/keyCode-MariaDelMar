@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+    <style>
+        body {
+            background-color: #ef9a9a;
+            color: aliceblue;
+            margin: 5rem;
+        }
+    
+        .parrafo1{
+            font-size: 25px;
+            color: violet;
+            font-weight: bold;
+            background-color: rgb(239, 243, 241);
+            height: 5rem;
+            width: 20rem;
+            border-radius: 20px;
+            padding: 30px;
+            
+        }
+        #miBoton{
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s ease-in-out;  
+            border-radius: 20px;
+        }
+        h1{
+            text-align: center;
+            font-size: 30px;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manipulacion del DOM con js</h1>
+        <p id="miParrafo" class="parrafo1">En bogotá hace frio</p>
+    </header>
+    <section>
+        <button id="miBoton">haz clic en mi!</button>
+    </section>
+    <script>
+        const boton =document.getElementById("miBoton")
+        const parrafo =document.getElementById("miParrafo");
+        const texto ="Hola soy nuevo"
+        boton.addEventListener("click",function(){
+            parrafo.innerHTML = "En Neiva hace muchoo calor" + " \n "+texto
+            parrafo.style.color = "red";
+            parrafo.style.fontWeight = 'italic'
+        });
+    </script>
+</body>
+</html>
