@@ -6,10 +6,9 @@ export const Selects = () => {
 
   const [departamento, setDepartamento] = useState("");
   const [municipio, setMuncipio] = useState("");
-  const [descripcion, setDescripcion] = useState("");
-
-  console.log('Departamento ID', departamento)
-  console.log('Municipio ID', municipio)
+  
+  console.log("Departamento ID", departamento);
+  console.log("Municipio ID", municipio);
 
   return (
     <>
@@ -25,7 +24,6 @@ export const Selects = () => {
         url={`https://api-colombia.com/api/v1/Department/${departamento}/cities`}
         manejadorcambio={(event) => {
           setMuncipio(event.target.value);
-         
         }}
       />
       <div className="label-select">
@@ -33,25 +31,18 @@ export const Selects = () => {
         <input
           type="text"
           id="ciudad-description"
+        //   manejadorcambio={(event) => {
+        //     setMuncipio(event.target.value);
+        //   }}
+          url={`https://api-colombia.com/api/v1/City/${municipio}`} //descripción de la Ciudad
           value={municipio}
           readOnly
           className="text-description"
-          url={`https://api-colombia.com/api/v1/Department/${departamento}/cities`}//descripción de la Ciudad 
-            manejadorcambio={(event) => {
-          setMuncipio(event.target.description);
-        }}
+          
         />
       </div>
-      
-      {/* <SelectList
-        title="Ciudad"
-        url={`https://api-colombia.com/api/v1/Department/${municipio}/cities`}
-        manejadorcambio={(event) => {
-            setCiudad(event.target.description);
-        }}
-      /> */}
 
-      
+    
     </>
   );
 };
