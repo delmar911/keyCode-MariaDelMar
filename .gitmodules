@@ -1,0 +1,6 @@
+[submodule "Ejercicios/react-router-grupo-B"]
+	path = Ejercicios/react-router-grupo-B
+	url = https://github.com/Medicenkaese/react-router-grupo-B
+[submodule "Ejercicios/taller_grupoB_router"]
+	path = Ejercicios/taller_grupoB_router
+	url = https://github.com/Medicenkaese/react-router-grupo-B

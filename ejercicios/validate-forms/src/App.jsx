@@ -4,12 +4,15 @@ import ContactForm from './components/ContactForm'
 
 function App() {
     return (
-    <>
-      <h1>Validate Forms</h1>
-      <div className="card">
-        <ContactForm/>
-      </div>
-    </>
+      <div className="flex justify-center">
+
+        <div className='w-1/2 bg-sky-500 rounded-xl'>
+          <h1 className='flex items-center'>Validate Forms</h1>
+          <div className="">
+            <ContactForm/>
+          </div>
+        </div>
+      </div>  
   )
 }
 

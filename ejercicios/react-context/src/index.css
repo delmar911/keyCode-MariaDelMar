@@ -1,0 +1,17 @@
+
+.my-page{
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 70%;
+  background-color: #e9ade5;
+}
+
+.light{
+  background-color: #dbd7d7;
+  color: #070707;
+}
+
+.dark{
+  background-color: #383535;
+  color: #fff;
+}

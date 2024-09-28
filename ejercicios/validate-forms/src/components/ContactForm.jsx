@@ -54,7 +54,7 @@ const ContactForm = () => {
     <>
       <h1>Formulario de contacto</h1>
       {/* con el evento onSubmit ejecutamos una funcion cuando se envia el formulario */}
-      <form onSubmit={enviarFormulario}>
+      <form onSubmit={enviarFormulario} >
         {/* Nombre */}
         <p>Nombre</p>
         <input
@@ -69,7 +69,7 @@ const ContactForm = () => {
         {/* Muestra la etiqueta p con el error solo si tiene un error en nombre */}
         {errores.nombre && <p className="p-error">{errores.nombre}</p>}
         {/* Email */}
-        <p>Email</p>
+        <p className="font-sans italic">Email</p>
         <input
           type="email"
           name="email"
